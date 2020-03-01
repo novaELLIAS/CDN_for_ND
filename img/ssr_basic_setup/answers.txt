@@ -1,0 +1,50 @@
+{
+    "server": "0.0.0.0",
+    "server_ipv6": "::",
+    "local_address": "127.0.0.1",
+    "local_port": 1081,
+    "port_password":
+    {
+        "1096":"ELLIAS",
+        "1919":"senpai",
+        "2020":"eva",
+        "417":"morsunhy",
+        "2333":"morsun",
+        "11451":"niconiconi!",
+        "10960":"ELLIAS"
+    },
+    "timeout": 120,
+    "udp_timeout": 60,
+    "method": "aes-256-cfb",
+    "protocol": "auth_sha1_v4_compatible",
+    "protocol_param": "",
+    "obfs": "http_simple_compatible",
+    "obfs_param": "",
+    "dns_ipv6": false,
+    "connect_verbose_info": 1,
+    "redirect": "",
+    "fast_open": false,
+    "workers": 1
+}
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<zone>
+  <short>Public</short>
+  <service name="dhcpv6-client"/>
+  <service name="ssh"/>
+  <port protocol="tcp" port="1096"/>
+  <port protocol="udp" port="1096"/>
+  <port protocol="tcp" port="1919"/>
+  <port protocol="udp" port="1919"/>
+  <port protocol="tcp" port="2020"/>
+  <port protocol="udp" port="2020"/>
+  <port protocol="tcp" port="2333"/>
+  <port protocol="udp" port="2333"/>
+  <port protocol="tcp" port="11451"/>
+  <port protocol="udp" port="11451"/>
+  <port protocol="tcp" port="417"/>
+  <port protocol="udp" port="417"/>
+  <port protocol="tcp" port="10960"/>
+  <port protocol="udp" port="10960"/>
+</zone>
