@@ -1,3 +1,7 @@
+var now = new Date();
+var hr = now.getHours();
+var mi = now.getMinutes();
+
 function getChromeVersion() {
     var arr = navigator.userAgent.split(' ');
     var version = '';
@@ -22,7 +26,6 @@ for (var i = 0; i < Spiders.length; i++) {
     } else {
         document.getElementById('clock').style.display = 'block';
     }
-}
 }
 
 function FireEnd() {
