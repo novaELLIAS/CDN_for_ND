@@ -1,3 +1,7 @@
+var now = new Date();
+var hr = 0;
+var mi = 0;
+
 function getChromeVersion() {
     var arr = navigator.userAgent.split(' ');
     var version = '';
@@ -14,13 +18,31 @@ function getChromeVersion() {
     }
 }
 
-for (var i = 0; i < Spiders.length; i++) {
-    if (MoeSpider.indexOf(Spiders[i].toLowerCase()) > -1) {
+if ((hr >= 0 || hr < 1) && (mi <= 1)) {
+    if (navigator.userAgent.indexOf('MSIE 6.0') > -1) {
+        document.getElementById('start').style.display = 'block';
+    } else if (navigator.userAgent.indexOf('MSIE 7.0') > -1) {
+        document.getElementById('start').style.display = 'block';
+    } else if (navigator.userAgent.indexOf('MSIE 8.0') > -1) {
+        document.getElementById('start').style.display = 'block';
+    } else {
+        if (getChromeVersion()) {
+            if (getChromeVersion() >= 66) {
+                document.getElementById('animate').muted = true;
+            }
+        }
         document.getElementById('fire').style.display = 'block';
         document.getElementById('animate').play();
-        break;
-    } else {
-        document.getElementById('clock').style.display = 'block';
+    }
+} else {
+    for (var i = 0; i < Spiders.length; i++) {
+        if (MoeSpider.indexOf(Spiders[i].toLowerCase()) > -1) {
+            document.getElementById('fire').style.display = 'block';
+            document.getElementById('animate').play();
+            break;
+        } else {
+            document.getElementById('clock').style.display = 'block';
+        }
     }
 }
 
