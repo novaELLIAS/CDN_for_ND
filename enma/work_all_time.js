@@ -30,7 +30,7 @@ function FireEnd() {
 }
 
 function Go() {
-    location.replace("https://brynhild.online/");
+    location.replace("https://hell.brynhild.online/");
 }
 
 function CheckInput() {

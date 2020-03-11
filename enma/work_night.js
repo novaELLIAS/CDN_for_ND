@@ -17,7 +17,7 @@ function getChromeVersion() {
     }
 }
 
-if (hr < 6 || hr >= 19) {
+if (hr < 6 || hr >= 21) {
     if (navigator.userAgent.indexOf('MSIE 6.0') > -1) {
         document.getElementById('start').style.display = 'block';
     } else if (navigator.userAgent.indexOf('MSIE 7.0') > -1) {
