@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+@media screen and (max-width: 950px) {
+
+	body {
+		zoom: 1.5;
+		-ms-zoom: 1;
+	}
+}
+
+:-webkit-autofill {
+	-webkit-text-fill-color: #999999 !important;
+	transition: background-color 60s ease-in-out 0s;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #000;
+}
+
+#clock {
+	width: auto;
+	margin: 55px 0px 0px 55px;
+	display: none;
+}
+
+#clock hr {
+	height: 2px;
+	color: #cc0000;
+	background-color: #cc0000;
+	border: none;
+	margin: 20px 0px;
+}
+
+.clockh {
+	color: #cc0000;
+	font: 42px Tahoma, "Microsoft Yahei", SimHei;
+	line-height: 42px;
+	letter-spacing: 1px;
+}
+
+.clockp {
+	color: #cc0000;
+	font: bold 15px FangSong, Simsun;
+	line-height: 15px;
+	letter-spacing: 1px;
+}
+
+#content,
+#start,
+#fire,
+#end {
+	width: auto;
+	height: auto;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 10%;
+	margin-top: 20vh;
+	overflow: hidden;
+	display: none;
+}
+
+#title {
+	color: #FFF;
+	text-align: center;
+	font: bold 25px FangSong, Simsun;
+	letter-spacing: 5px;
+	margin-bottom: 25px;
+}
+
+#hell {
+	text-align: center;
+}
+
+#nickname {
+	width: 245px;
+	height: 25px;
+	color: #000;
+	font: 12px Tahoma, "Microsoft Yahei", SimHei;
+	line-height: 25px;
+	border: #8B8B8B solid 1px;
+	border-radius: 1px;
+	padding: 0px 5px;
+	margin-bottom: 25px;
+	box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.60) inset;
+	overflow: hidden;
+}
+
+#btn_send {
+	height: 25px;
+	color: #000;
+	font: 12px Tahoma, "Microsoft Yahei", SimHei;
+	border: none;
+	line-height: 25px;
+	padding: 0px 8px;
+	background-color: #BBB;
+	box-shadow: -1px -1px 2px 1px rgba(0, 0, 0, 0.60) inset, 1px 1px 2px 1px rgba(255, 255, 255, 0.60) inset;
+}
+
+#btn_send:hover {
+	color: #FFF;
+	background-color: #cc0000;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.60) inset;
+}
+
+#end_logo {
+	width: 80px;
+	height: 90px;
+	margin: 0px auto;
+	margin-bottom: 25px;
+}
+
+.end_h {
+	color: #000;
+	font: bold 20px Tahoma, "Microsoft Yahei", SimHei;
+	display: block;
+}
+
+.end_p {
+	color: #000;
+	font: bold 14px FangSong, Simsun;
+	display: block;
+}
+
+#info {
+	width: 0px;
+	height: 0px;
+	display: none;
+	overflow: hidden;
+}
