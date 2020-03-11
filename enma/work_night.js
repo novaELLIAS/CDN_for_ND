@@ -17,7 +17,7 @@ function getChromeVersion() {
     }
 }
 
-if (hr < 6 || hr >= 21) {
+if (hr < 6 || hr >= 19) {
     if (navigator.userAgent.indexOf('MSIE 6.0') > -1) {
         document.getElementById('start').style.display = 'block';
     } else if (navigator.userAgent.indexOf('MSIE 7.0') > -1) {
@@ -51,7 +51,7 @@ function FireEnd() {
 }
 
 function Go() {
-    location.replace("https://brynhild.online/");
+    location.replace("https://hell.brynhild.online/");
 }
 
 function CheckInput() {

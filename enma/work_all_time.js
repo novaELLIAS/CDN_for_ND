@@ -1,7 +1,3 @@
-var now = new Date();
-var hr = now.getHours();
-var mi = now.getMinutes();
-
 function getChromeVersion() {
     var arr = navigator.userAgent.split(' ');
     var version = '';
