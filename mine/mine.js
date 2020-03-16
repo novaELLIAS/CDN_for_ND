@@ -17,7 +17,7 @@ Mine.prototype = {
 		//画格子
 		this.ele.width = this.PANE_SIZE * this.panewidth;
 		this.ele.height = this.PANE_SIZE * this.paneheight;
-		this.faceele.src = "res/face_normal.bmp";
+		this.faceele.src = "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/face_normal.bmp";
 
 		this.oldPos = [0, 0]; //鼠标上一个停留的位置。默认值。用于处理hover事件。
 		this.cellArr = []; //格子信息保存数组。保存每个格子是不是雷，当前是否有标记。
@@ -161,7 +161,7 @@ Mine.prototype = {
 		}
 
 		if (theCell.isMine == true) { // 如果点到的这个是雷，就判输。显示所有雷
-			this.faceele.src = "res/face_fail.bmp";
+			this.faceele.src = "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/face_fail.bmp";
 			this.showMine();
 			this.drawCell(pos, 6); //点中的雷。
 			this.showWrongTag(); //将标记错误的显示出来。
@@ -196,7 +196,7 @@ Mine.prototype = {
 		}
 
 		if (openNum == okNum) {
-			this.faceele.src = "res/face_success.bmp";
+			this.faceele.src = "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/face_success.bmp";
 			alert("you win!");
 			clearInterval(this.timer);
 			this.ele.onmouseup = '';
@@ -371,7 +371,7 @@ Mine.prototype = {
 		var cxt = this.cxt;
 		var image = new Image();
 		var src;
-		var srcArr = ["res/blank.bmp", "res/0.bmp", "res/flag.bmp", "res/ask.bmp", "res/mine.bmp", "res/blood.bmp", "res/error.bmp"];
+		var srcArr = ["https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/blank.bmp", "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/0.bmp", "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/flag.bmp", "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/ask.bmp", "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/mine.bmp", "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/blood.bmp", "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/error.bmp"];
 		//1正常格 2mouseover格子 3旗子格 4问号格 5正常雷格 6点中雷格 7.错误标记
 		var index = type - 1;
 		image.src = srcArr[index];
@@ -383,7 +383,7 @@ Mine.prototype = {
 		var area = this.getCellArea(pos);
 		var cxt = this.cxt;
 		var image = new Image();
-		image.src = "res/" + num + ".bmp";
+		image.src = "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/" + num + ".bmp";
 		image.onload = function () {
 			cxt.drawImage(image, area[0], area[1], 16, 16);
 		}
@@ -440,7 +440,7 @@ Mine.prototype = {
 		var ele = document.getElementsByClassName(ele)[0].getElementsByTagName('img');
 
 		for (var i = 0, eLen = ele.length; i < eLen; i++) {
-			ele[i].src = "res/d" + num.toString().charAt(i) + ".bmp";
+			ele[i].src = "https://cdn.jsdelivr.net/gh/novaELLIAS/CDN_for_ND/mine/res/d" + num.toString().charAt(i) + ".bmp";
 		};
 
 	}
