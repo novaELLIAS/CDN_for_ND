@@ -11,7 +11,7 @@ SD.prototype = {
 		this.createDoms();
 		var beginTime = new Date().getTime();
 		this.createSdArr();
-		console.log("success. time: " + ((new Date().getTime()) - beginTime) / 1000 + "秒！");
+		console.log("success. time: " + ((new Date().getTime()) - beginTime) / 1000 + "s.");
 		this.blankNum = this.setLevel() || blankNum || this.blankNum;
 		this.drawCells();
 		this.createBlank(this.blankNum);
@@ -23,7 +23,7 @@ SD.prototype = {
 		$(".sdspan").removeClass('bg_red blankCell');
 		var beginTime = new Date().getTime();
 		this.createSdArr();
-		console.log("success. time: " + ((new Date().getTime()) - beginTime) / 1000 + "秒！");
+		console.log("success. time: " + ((new Date().getTime()) - beginTime) / 1000 + "s.");
 		this.blankNum = this.setLevel() || this.blankNum;
 		$(".sdspan[contenteditable=true]").prop('contenteditable', false);
 		this.drawCells();
@@ -206,7 +206,7 @@ SD.prototype = {
 			$(".bg_red").removeClass('bg_red');
 		} else {
 			if (!done) {
-				alert("你没有完成游戏！");
+				alert("Not finished.");
 			}
 			this.showErrors();
 		}
