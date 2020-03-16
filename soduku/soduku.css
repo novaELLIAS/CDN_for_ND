@@ -1,13 +1,16 @@
-		ul,li{
-			list-style: none;	
+		ul,
+		li {
+			list-style: none;
 			margin: 0;
-			padding: 0;		
+			padding: 0;
 		}
-		.sd{
+
+		.sd {
 			width: 260px;
 			margin: 50px auto 0;
 		}
-		.sdspan{
+
+		.sdspan {
 			float: left;
 			display: inline-block;
 			margin: 0;
@@ -17,43 +20,51 @@
 			line-height: 26px;
 			text-align: center;
 		}
-		.sdli{
+
+		.sdli {
 			width: 100%;
 			height: 26px;
 			float: left;
 		}
 
-		.bl{
+		.bl {
 			border-left-color: green;
 			border-left-style: solid;
 		}
-		.bt{
+
+		.bt {
 			border-top-color: green;
 			border-top-style: solid;
 		}
-		.br{
+
+		.br {
 			border-right-color: green;
 			border-right-width: 2px;
 			border-right-style: solid;
 		}
-		.bb{
+
+		.bb {
 			border-bottom-color: green;
 			border-bottom-width: 2px;
 			border-bottom-style: solid;
 		}
-		.blankCell{
-			color:blue;
+
+		.blankCell {
+			color: blue;
 			font-weight: 600;
 		}
-		.bg_red{
+
+		.bg_red {
 			background: red;
 		}
-		.clearfix:after{
+
+		.clearfix:after {
 			content: '';
 			display: table;
 			clear: both;
 		}
-		.btn-group{
-			margin-top:20px;
-			text-align:center;
+
+		.btn-group {
+			margin-top: 20px;
+			text-align: center;
 		}
