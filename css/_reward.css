@@ -111,7 +111,7 @@
   display: none;
   perspective: 400px;
 }
-#MainBoxx {
+#MainBox {
   cursor: pointer;
   position: absolute;
   text-align: center;
@@ -185,7 +185,7 @@
 [data-footnote]:hover::after {
   transform: translate3d(-50%, -7px, 0);
 }
-#MainBoxx.showQR {
+#MainBox.showQR {
   opacity: 1;
   animation-name: showQR;
   animation-duration: 3s;
@@ -234,7 +234,7 @@
     opacity: 1;
   }
 }
-#MainBoxx.hideQR {
+#MainBox.hideQR {
   opacity: 1;
   animation-name: hideQR;
   animation-duration: 0.5s;
